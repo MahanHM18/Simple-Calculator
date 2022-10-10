@@ -90,6 +90,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Goldenrod;
             this.Controls.Add(this.Numeric2);
             this.Controls.Add(this.Numeric1);
             this.Controls.Add(this.DivisionBtn);
@@ -99,6 +100,7 @@
             this.Controls.Add(this.ResultLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Numeric1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Numeric2)).EndInit();
             this.ResumeLayout(false);

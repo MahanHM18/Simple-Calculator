@@ -27,12 +27,12 @@ namespace SimpleCalculator
         public Form1()
         {
             InitializeComponent();
-
+            ResultLbl.Text = "";
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            ResultLbl.Text = "";
+
         }
 
         private void SumBtn_Click(object sender, EventArgs e)
@@ -57,6 +57,11 @@ namespace SimpleCalculator
         {
             math.Division(GetNumeric(1), GetNumeric(2));
             ResultLbl.Text = $"The Result is : {Convert.ToString(math.Result())}";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
