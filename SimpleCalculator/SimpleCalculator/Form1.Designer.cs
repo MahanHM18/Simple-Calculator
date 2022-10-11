@@ -36,6 +36,8 @@
             this.DivisionBtn = new System.Windows.Forms.Button();
             this.Numeric1 = new System.Windows.Forms.NumericUpDown();
             this.Numeric2 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Numeric1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Numeric2)).BeginInit();
             this.SuspendLayout();
@@ -86,11 +88,23 @@
             resources.ApplyResources(this.Numeric2, "Numeric2");
             this.Numeric2.Name = "Numeric2";
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Numeric2);
             this.Controls.Add(this.Numeric1);
             this.Controls.Add(this.DivisionBtn);
@@ -99,14 +113,20 @@
             this.Controls.Add(this.SumBtn);
             this.Controls.Add(this.ResultLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Numeric1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Numeric2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
+        private System.Windows.Forms.Label label2;
+
+        private System.Windows.Forms.Label label1;
 
         #endregion
 
